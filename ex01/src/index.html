@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <title>QWERTY keyboard</title>
+        <link rel="stylesheet" href="..\src\index.css">
+        <textarea name="keyboard-input" id="keyboard=keyboard-input" cols="100" rows="10">TEXT AREA</textarea>
+
+<h2></h2>
+    </head>
+ <body>
+<div class="container">
+    <div class="row1">
+        <button class="btn1" onclick="input()">1</button>
+        <button onclick="input(2)">2</button>
+        <button onclick="input(3)">3</button>
+        <button onclick="input(4)">4</button>
+        <button onclick="input(5)">5</button>
+        <button onclick="input(6)">6</button>
+        <button onclick="input(7)">7</button>
+        <button onclick="input(8)">8</button>
+        <button onclick="input(9)">9</button>
+        <button onclick="input(0)">0</button>
+        <button class="backspace" onclick="del()">Backspace</button>
+    </div>
+<div class="row2">
+    <button onclick="input(q)">q</button>
+    <button onclick="input(w)">w</button>
+    <button onclick="input(e)">e</button>
+    <button onclick="input(r)">r</button>
+    <button onclick="input(t)">t</button>
+    <button onclick="input(y)">y</button>
+    <button onclick="input(u)">u</button>
+    <button onclick="input(i)">i</button>
+    <button onclick="input(o)">o</button>
+    <button onclick="input(p)">p</button>
+</div>
+
+<div class="row3">
+    <button onclick="input()">a</button>
+    <button onclick="input()">s</button>
+    <button onclick="input()">d</button>
+    <button onclick="input()">f</button>
+    <button onclick="input()">g</button>
+    <button onclick="input()">h</button>
+    <button onclick="input()">j</button>
+    <button onclick="input()">k</button>
+    <button onclick="input()">l</button>
+    <button class="caps-lock" onclick="input()">Caps Lock</button>
+    </div>
+    <div class="row4">
+        <button onclick="input()">z</button>
+        <button onclick="input()">x</button>
+        <button onclick="input()">c</button>
+        <button onclick="input()">v</button>
+        <button onclick="input()">b</button>
+        <button onclick="input()">n</button>
+        <button onclick="input()">m</button>
+        <button onclick="input()">-</button>
+        <button onclick="input()">_</button>
+        <button class="shift" onclick="input()">Shift</button>
+    </div>
+    
+    <div class="row5">
+        <button class="Space" onclick="input()">Space</button>
+        <button class="OK" onclick="input()">OK</button>
+    </div>
+
+
+
+
+
+        <script url="..\src\index.js"></script>
+        <script>
+            function input() {
+              document.getElementById("field2").value = document.getElementById("field1").value;
+            }
+            </script>
+</body>
+</html>
